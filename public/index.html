@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot</title>
+
+    <!-- include bootstrap style -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- costum css -->
+    <link rel="stylesheet" href="./static/css/style.css">
+
+    <!-- Bot API -->
+    <script>
+        var host = "http://localhost:5005/webhooks/rest/webhook";
+        var botName = "Uchiha";
+    </script>
+</head>
+
+<body class="bg-light">
+    <nav class="navbar navbar-dark bg-danger sticky-top">
+        <a class="navbar-brand" href="#">Chatbot</a>
+    </nav>
+
+    <div class="container-fluid">
+        <button class="btn btn-primary btn-lg" id="chat-btn">
+            <i class="fa fa-comment-dots fa-lg"></i>
+        </button>
+        <div class="card chat-popup">
+            <div class="card-header text-center bg-dark text-white">
+                <strong>Chatbot</strong>
+            </div>
+            <div class="card-body" id="chat-area">
+                <div class="income-msg d-flex align-items-start my-2">
+                    <img src="static/img/bot-ava.png" alt="bot.img" class="avatar mr-1">
+                    <span class="msg bg-primary text-white px-3 py-2 mr-4">Hi, Saya Uchiha. Kamu bisa memulai chat dengan "hi"</span>
+                </div>
+                <ul></ul>
+            </div>
+            <div class="card-footer bg-white" id="input-area">
+                <div class="d-flex justify-content-center">
+                    <input type="text" class="form-control" name="message" id="message"
+                        placeholder="Type a message ..." autocomplete="off">
+                    <button class="btn btn-success ml-1" id="submit"><i class="fa fa-paper-plane"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- include bootstrap js -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+    <script src="https://kit.fontawesome.com/f72f95dbc9.js" crossorigin="anonymous"></script>
+
+    <!-- include firebase sdk -->
+    <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-database.js"></script>
+
+    <!-- costum js -->
+    <script src="./static/js/firebase-config.js"></script>
+    <script src="./static/js/app.js"></script>
+    <script src="./static/js/webchat.js"></script>
+</body>
+
+</html>
