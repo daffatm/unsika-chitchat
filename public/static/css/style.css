@@ -63,7 +63,11 @@ body {
 }
 
 #chat-area::-webkit-scrollbar {
-    display: none;
+    width: 5px;
+}
+
+#chat-area::-webkit-scrollbar-thumb {
+    background: #666;
 }
 
 #chat-area .msg {
