@@ -68,6 +68,9 @@ node_modules/
 .firebase/
 public/static/js/firebase-config.js
 
+# Python test file
+main.py
+
 ### VisualStudioCode ###
 .vscode/*
 !.vscode/settings.json
