@@ -18,6 +18,10 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     })
 
+    inputMsg.addEventListener('click', () => {
+        yScroll();
+    })
+
     sendBtn.addEventListener('click', () => {
         userMessage();
         // yScroll();
