@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     })
 
-    inputMsg.addEventListener('click', () => {
+    inputMsg.addEventListener('focus', () => {
         yScroll();
     })
 
