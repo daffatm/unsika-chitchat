@@ -21,31 +21,106 @@
     </script>
 </head>
 
-<body class="bg-light">
-    <nav class="navbar navbar-dark bg-danger sticky-top">
-        <a class="navbar-brand" href="#">Chatbot</a>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar">
+        <a class="navbar-brand" href="#"><strong>UNSIKA</strong> CHITCHAT</a>
     </nav>
 
+    <!-- Chat Popup -->
     <div class="container-fluid">
         <button class="btn btn-primary btn-lg" id="chat-btn">
             <i class="fa fa-comment-dots fa-lg"></i>
         </button>
-        <div class="card chat-popup">
+        <div class="chat-popup card">
             <div class="card-header text-center bg-dark text-white">
-                <strong>Chatbot</strong>
+                <strong>UCHIHA</strong>
             </div>
             <div class="card-body" id="chat-area">
                 <div class="income-msg d-flex align-items-start my-2">
                     <img src="static/img/bot-ava.png" alt="bot.img" class="avatar mr-1">
-                    <span class="msg bg-primary text-white px-3 py-2 mr-4">Hi, Saya Uchiha. Kamu bisa memulai chat dengan "hi"</span>
+                    <span class="msg bg-primary text-white px-3 py-2 mr-4">Hi, Saya Uchiha. Kamu bisa memulai chat
+                        dengan "hi"</span>
                 </div>
-                <ul></ul>
+                <ul class="msg-ballon"></ul>
             </div>
             <div class="card-footer bg-white" id="input-area">
                 <div class="d-flex justify-content-center">
-                    <input type="text" class="form-control" name="message" id="message"
-                        placeholder="Type a message ..." autocomplete="off">
+                    <input type="text" class="form-control" name="message" id="message" placeholder="Type a message ..."
+                        autocomplete="off">
                     <button class="btn btn-success ml-1" id="submit"><i class="fa fa-paper-plane"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Content -->
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container text-white">
+            <h1>UNSIKA</h1>
+            <h1 class="text-warning">CHITCHAT</h1>
+            <p>CUSTOMER SERVICE BERBASIS CHATBOT</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="text-center" id="about">
+            <div class="card">
+                <div class="card-header bg-white">
+                    <h2>About</h2>
+                </div>
+                <div class="card-body">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis saepe debitis necessitatibus
+                    harum modi accusamus eaque quibusdam iusto et dolorem unde, libero placeat iure quidem beatae, illum
+                    architecto. Asperiores, beatae.
+                    Veniam voluptatum voluptas provident adipisci, sequi in iste natus placeat quia architecto nihil
+                    magni cumque consequuntur iusto cupiditate a delectus asperiores! Nemo placeat accusamus soluta iste
+                    repellat officiis facere culpa.
+                    Accusamus, perspiciatis quasi non doloribus possimus, tenetur recusandae eum incidunt cum suscipit
+                    nemo asperiores qui eius in maxime, sit neque blanditiis. Laborum odit, eos dolores nobis amet
+                    repellat facilis minima.
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mt-5" id="creator">
+            <div class="card">
+                <div class="card-header">
+                    <h2>Creator</h2>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <img src="./static/img/bot-ava.png" alt="" class="img-fluid">
+                                </div>
+                                <div class="card-footer">
+                                    <h5><b>Creator</b></h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <img src="./static/img/bot-ava.png" alt="" class="img-fluid">
+                                </div>
+                                <div class="card-footer">
+                                    <h5><b>Creator</b></h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <img src="./static/img/bot-ava.png" alt="" class="img-fluid">
+                                </div>
+                                <div class="card-footer">
+                                    <h5><b>Creator</b></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
