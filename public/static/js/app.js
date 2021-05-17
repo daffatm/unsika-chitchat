@@ -9,6 +9,17 @@ document.addEventListener('DOMContentLoaded', () => {
         chatArea.scrollTop = chatArea.scrollHeight;
     }
 
+    $(window).scroll(() => {
+        var scroll = $(window).scrollTop();
+        document.getElementById("my-body").style.marginTop = (-5 - (0.2 * scroll)) + "px";
+
+        if (scroll >= 250) {
+            $("#navbar").addClass("bg-danger");
+        } else {
+            $("#navbar").removeClass("bg-danger");
+        }
+    })
+
     // var user = firebase.auth().currentUser;
     chatBtn.addEventListener('click', () => {
         if (userId != '' && ip != '') {

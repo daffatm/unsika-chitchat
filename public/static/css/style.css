@@ -131,6 +131,14 @@ ul.msg-balloon {
     letter-spacing: 3px;
 }
 
+#creator img {
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+    object-position: center;
+}
+
 @media (max-width: 992px) {
     .chat-popup {
         bottom: 90px;
@@ -158,6 +166,7 @@ ul.msg-balloon {
         background-position: left;
         height: 500px;
         padding-top: 150px;
+        text-align: center;
     }
 
     .jumbotron h1 {
